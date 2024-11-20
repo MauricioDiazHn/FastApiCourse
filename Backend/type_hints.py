@@ -1,10 +1,16 @@
 
+my_string_variable = "My String variable"
+print(my_string_variable)
+print(type(my_string_variable))
 
-my_list = list()
-my_other_list = []
+my_string_variable = 5
+print(my_string_variable)
+print(type(my_string_variable))
 
-print(len(my_list))
+my_typed_variable: str = "My typed String variable"
+print(my_typed_variable)
+print(type(my_typed_variable))
 
-my_list = [35, 24, 62, 52, 30, 17]
-
-print(my_list)
+my_typed_variable = 5
+print(my_typed_variable)
+print(type(my_typed_variable))
