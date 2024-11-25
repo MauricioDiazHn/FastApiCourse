@@ -38,9 +38,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/scss/styles.scss"
+              "src/scss/styles.scss",
+              "node_modules/izimodal/css/iziModal.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/izimodal/js/iziModal.min.js"
+            ],
             "allowedCommonJsDependencies": []
           },
           "configurations": {

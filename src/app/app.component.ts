@@ -8,11 +8,18 @@ import { ColorModeService } from '@coreui/angular';
 import { IconSetService } from '@coreui/icons-angular';
 import { iconSubset } from './icons/icon-subset';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @Component({
   selector: 'app-root',
   template: '<router-outlet />',
   standalone: true,
-  imports: [RouterOutlet]
+  imports: [
+    RouterOutlet,
+    FormsModule, 
+    HttpClientModule
+  ]
 })
 export class AppComponent implements OnInit {
   title = 'CoreUI Angular Admin Template';

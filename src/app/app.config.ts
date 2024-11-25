@@ -9,6 +9,7 @@ import {
   withViewTransitions
 } from '@angular/router';
 
+import { HttpClientModule } from '@angular/common/http';
 import { DropdownModule, SidebarModule } from '@coreui/angular';
 import { IconSetService } from '@coreui/icons-angular';
 import { routes } from './app.routes';
@@ -27,7 +28,7 @@ export const appConfig: ApplicationConfig = {
       withViewTransitions(),
       withHashLocation()
     ),
-    importProvidersFrom(SidebarModule, DropdownModule),
+    importProvidersFrom(SidebarModule, DropdownModule, HttpClientModule),
     IconSetService,
     provideAnimations()
   ]

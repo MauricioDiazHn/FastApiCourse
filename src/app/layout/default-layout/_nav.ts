@@ -2,7 +2,7 @@ import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'Dashboard',
+    name: 'Inicio',
     url: '/dashboard',
     iconComponent: { name: 'cil-speedometer' },
     badge: {
@@ -11,166 +11,93 @@ export const navItems: INavData[] = [
     }
   },
   {
-    title: true,
-    name: 'Theme'
-  },
-  {
-    name: 'Colors',
-    url: '/theme/colors',
-    iconComponent: { name: 'cil-drop' }
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    linkProps: { fragment: 'headings' },
-    iconComponent: { name: 'cil-pencil' }
-  },
-  {
-    name: 'Components',
+    name: 'Administracion',
     title: true
   },
   {
-    name: 'Base',
-    url: '/base',
+    name: 'Proyectos',
+    url: '/proyectos',
     iconComponent: { name: 'cil-puzzle' },
     children: [
       {
-        name: 'Accordion',
-        url: '/base/accordion',
+        name: 'Target Principal',
+        url: '/proyectos/target-principal',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Breadcrumbs',
-        url: '/base/breadcrumbs',
+        name: 'Target Adicional',
+        url: '/proyectos/target-adicional',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Cards',
-        url: '/base/cards',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Carousel',
-        url: '/base/carousel',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Collapse',
-        url: '/base/collapse',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'List Group',
-        url: '/base/list-group',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Navs & Tabs',
-        url: '/base/navs',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Pagination',
-        url: '/base/pagination',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Placeholder',
-        url: '/base/placeholder',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Popovers',
-        url: '/base/popovers',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Progress',
-        url: '/base/progress',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Spinners',
-        url: '/base/spinners',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Tables',
-        url: '/base/tables',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Tabs',
-        url: '/base/tabs',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Tooltips',
-        url: '/base/tooltips',
+        name: 'Solicitud aprobacion presupuesto',
+        url: '/proyectos/solicitud-aprobacion-presupuesto',
         icon: 'nav-icon-bullet'
       }
     ]
   },
   {
-    name: 'Buttons',
-    url: '/buttons',
+    name: 'Compras',
+    url: '/compras',
     iconComponent: { name: 'cil-cursor' },
     children: [
       {
-        name: 'Buttons',
-        url: '/buttons/buttons',
+        name: 'Solicitud',
+        url: '/compras/solicitud',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Button groups',
-        url: '/buttons/button-groups',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Dropdowns',
-        url: '/buttons/dropdowns',
+        name: 'Pedidos',
+        url: '/compras/pedidos',
         icon: 'nav-icon-bullet'
       }
     ]
   },
   {
-    name: 'Forms',
-    url: '/forms',
+    name: 'Timer',
+    url: '/timer',
     iconComponent: { name: 'cil-notes' },
     children: [
       {
-        name: 'Form Control',
-        url: '/forms/form-control',
+        name: 'Timer Proyecto',
+        url: '/timer/timer-proyecto',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Select',
-        url: '/forms/select',
+        name: 'Monitor Timer Proyectos',
+        url: '/timer/monitor-timer-proyectos',
+        icon: 'nav-icon-bullet'
+      }
+    ]
+  },
+  {
+    name: 'Inventarios',
+    url: '/inventarios',
+    iconComponent: { name: 'cil-cursor' },
+    children: [
+      {
+        name: 'Entradas',
+        url: '/inventarios/entradas',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Checks & Radios',
-        url: '/forms/checks-radios',
+        name: 'Salidas',
+        url: '/inventarios/salidas',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Range',
-        url: '/forms/range',
+        name: 'Traslados',
+        url: '/inventarios/Traslados',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Input Group',
-        url: '/forms/input-group',
+        name: 'Conteo',
+        url: '/inventarios/conteo',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Floating Labels',
-        url: '/forms/floating-labels',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Layout',
-        url: '/forms/layout',
+        name: 'Empleados',
+        url: '/inventarios/empleados',
         icon: 'nav-icon-bullet'
       },
       {
@@ -181,99 +108,55 @@ export const navItems: INavData[] = [
     ]
   },
   {
-    name: 'Charts',
-    iconComponent: { name: 'cil-chart-pie' },
-    url: '/charts'
-  },
-  {
-    name: 'Icons',
-    iconComponent: { name: 'cil-star' },
-    url: '/icons',
+    name: 'Reportes',
+    url: '/reportes',
+    iconComponent: { name: 'cil-cursor' },
     children: [
       {
-        name: 'CoreUI Free',
-        url: '/icons/coreui-icons',
-        icon: 'nav-icon-bullet',
-        badge: {
-          color: 'success',
-          text: 'FREE'
-        }
-      },
-      {
-        name: 'CoreUI Flags',
-        url: '/icons/flags',
+        name: 'Existencias',
+        url: '/reportes/existencias',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'CoreUI Brands',
-        url: '/icons/brands',
+        name: 'Kardex',
+        url: '/reportes/kardex',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Ventas',
+        url: '/reportes/ventas',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Compras',
+        url: '/reportes/compras',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Cuentas por cobrar',
+        url: '/reportes/cuentas-por-cobrar',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Cuentas por pagar',
+        url: '/reportes/cuentas-por-pagar',
         icon: 'nav-icon-bullet'
       }
     ]
   },
   {
-    name: 'Notifications',
-    url: '/notifications',
-    iconComponent: { name: 'cil-bell' },
+    name: 'Configuraciones',
+    url: '/configuraciones',
+    iconComponent: { name: 'cil-puzzle' },
     children: [
       {
-        name: 'Alerts',
-        url: '/notifications/alerts',
+        name: 'Cambio de clave',
+        url: '/configuraciones/cambio-de-clave',
         icon: 'nav-icon-bullet'
       },
       {
-        name: 'Badges',
-        url: '/notifications/badges',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Modal',
-        url: '/notifications/modal',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Toast',
-        url: '/notifications/toasts',
-        icon: 'nav-icon-bullet'
-      }
-    ]
-  },
-  {
-    name: 'Widgets',
-    url: '/widgets',
-    iconComponent: { name: 'cil-calculator' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
-  },
-  {
-    title: true,
-    name: 'Extras'
-  },
-  {
-    name: 'Pages',
-    url: '/login',
-    iconComponent: { name: 'cil-star' },
-    children: [
-      {
-        name: 'Login',
-        url: '/login',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Register',
-        url: '/register',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Error 404',
-        url: '/404',
-        icon: 'nav-icon-bullet'
-      },
-      {
-        name: 'Error 500',
-        url: '/500',
+        name: 'Parametros y maestros',
+        url: '/configuraciones/parametros-y-maestros',
         icon: 'nav-icon-bullet'
       }
     ]
